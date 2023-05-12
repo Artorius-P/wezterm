@@ -5,12 +5,13 @@ local wezterm = require("wezterm")
 return {
 	colors = color,
 	keys = keybinds.create_keybinds(),
+  mouse_bindings = keybinds.mouse_bindings,
 	key_tables = keybinds.key_tables,
 	window_frame = require("window_frame"),
 
   -- font
 	font = wezterm.font("JetbrainsMono Nerd font"),
-	font_size = 15.0,
+	font_size = 12.0,
 
 	-- 输入法
 	use_ime = true,
